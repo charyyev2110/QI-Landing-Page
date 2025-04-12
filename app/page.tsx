@@ -28,7 +28,8 @@ const Home = () => {
         setMessage(data.error || 'Something went wrong')
       }
     } catch (error) {
-      setMessage('Failed to submit')
+      // setMessage('Failed to submit')
+      console.log('something went wront', error)
     }
     setLoading(false)
   }

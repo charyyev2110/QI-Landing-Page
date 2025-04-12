@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
 
-export interface ButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {}
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ className, ...props }, ref) => {
   return (
@@ -17,5 +17,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ className, ..
     </button>
   )
 })
+
+Button.displayName = 'Button'
 
 export default Button
