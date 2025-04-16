@@ -48,6 +48,18 @@ export default function RootLayout({
             })(window, document, "clarity", "script", 'r4oaogc0vz');`
           }}
         />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QFTYPSZQZ8');
+            `
+          }}
+        />
       </head>
       {/* <iframe
           width="540"
