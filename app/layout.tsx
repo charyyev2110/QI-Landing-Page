@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 
 import './globals.css'
-import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'QI | Quality Intelligence - Autonomous AI QA Assistant',
@@ -37,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <Head>
+      <head>
         <Script
           id="clarity-script"
           strategy="afterInteractive"
@@ -49,7 +48,7 @@ export default function RootLayout({
             })(window, document, "clarity", "script", 'r4oaogc0vz');`
           }}
         />
-      </Head>
+      </head>
       {/* <iframe
           width="540"
           height="305"
