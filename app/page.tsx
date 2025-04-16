@@ -57,10 +57,25 @@ const Home = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          {/* <div>
+              <iframe
+                width="540"
+                height="305"
+                src="https://sibforms.com/serve/MUIFAAbcqXmOh9VzYmLQ8n5xUlqXqQxcH20xpzlAdd8ISnlw0M1pcER-OtvIkZnxP-VkpA6DCn4-4ZSyNkWxjxr_JarRxLdv_svS9ZUteEFt102QdyP4_b0d4C39ksL0zqptHVB-IZkkk5zdhFR5f1UAnGQLcGuKsaYclyR73AIB8W2aVr0K9WFlPdukAYTaON6aq2wtlpJe3WFY"
+                className="w-full relative z-10"
+                frameBorder="0"
+                scrolling="auto"
+                allowFullScreen
+                // style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"
+                // style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', maxWidth: '100%' }}
+              ></iframe>
+            </div>
+          </Input> */}
           <Button onClick={handleSubmit} aria-disabled={loading} className="z-10">
             {loading ? 'Joining...' : 'Join Waitlist'}
           </Button>
         </div>
+
         <div className="w-full h-8 flex justify-center items-center">
           <p className="text-muted-foreground">{message}</p>
         </div>

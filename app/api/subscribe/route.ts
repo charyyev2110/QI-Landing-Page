@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     },
     body: JSON.stringify({
       email,
-      listIds: [3],
+      listIds: [6],
       updateEnable: true
     })
   })
