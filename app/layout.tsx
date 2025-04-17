@@ -50,12 +50,24 @@ export default function RootLayout({
         />
 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTYPSZQZ8"></Script>
-        <Script>
+        <Script id="google-analytics">
           {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-QFTYPSZQZ8');`}
+        </Script>
+
+        <Script id="mcjs">
+          {`      !function(c,h,i,m,p)
+          {
+            ((m = c.createElement(h)),
+            (p = c.getElementsByTagName(h)[0]),
+            (m.async = 1),
+            (m.src = i),
+            p.parentNode.insertBefore(m, p))
+          }
+          (document,"script","https://chimpstatic.com/mcjs-connected/js/users/f613bb277bbbb54777233d99a/6defd89ec1e374bb2f9a90642.js");`}
         </Script>
       </head>
       {/* <iframe
