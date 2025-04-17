@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        {/* <Script
+        <Script
           id="clarity-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -47,7 +47,7 @@ export default function RootLayout({
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", 'r4oaogc0vz');`
           }}
-        /> */}
+        />
 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTYPSZQZ8"></Script>
         <Script>
